@@ -1,6 +1,5 @@
 # Deepfake Detection using Frame and Temporal Features
-
-This repository contains a project for detecting deepfake videos using machine learning techniques. The approach combines **frame-based**, **temporal**, and **combined** features extracted from video data to classify videos as real or fake.
+This project explores the problem of deepfake video detection using deep learning. The core objective is to classify whether a video is real or deepfake based on extracted frame-level, temporal, and combined features.
 
 ---
 
