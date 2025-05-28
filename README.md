@@ -1,10 +1,106 @@
-# Deepfake Detection using Frame and Temporal Features
-This project explores the problem of deepfake video detection using deep learning. The core objective is to classify whether a video is real or deepfake based on extracted frame-level, temporal, and combined features.
+
+# 🎭 Deepfake Detection using EfficientViT and Temporal Modeling
+
+A lightweight and highly accurate deepfake video detection system using **EfficientViT** for frame-level embeddings and **Temporal Convolutional Networks (TCN)** for sequence modeling.
 
 ---
 
-## Project Overview
+## 🔍 Overview
 
-The goal is to build a robust binary classifier that leverages visual (frame) and motion (temporal) patterns from video embeddings to detect deepfakes effectively.
+This project focuses on detecting deepfake videos by leveraging spatial and temporal features:
+
+- **Spatial Features**: Extracted using `EfficientViT`, a vision transformer designed for fast and efficient image encoding.
+- **Temporal Features**: Modeled using a 1D convolutional layer to capture inter-frame inconsistencies.
+- Achieved **97.5% accuracy** and **0.9975 AUC** on the test set.
 
 ---
+
+## 📌 Key Features
+
+- ✅ Frame-wise feature extraction using a pretrained `EfficientViT`
+- ✅ Temporal convolution over time sequences of frames
+- ✅ Binary classification (real vs fake)
+- ✅ ROC-AUC and confusion matrix evaluation
+- ✅ Visual performance tracking (Accuracy, AUC)
+
+---
+
+
+## 📂 Dataset Structure
+
+```
+deepfake_dataset/
+├── train/
+│   ├── real/
+│   └── fake/
+└── test/
+    ├── real/
+    └── fake/
+```
+
+Each video is preprocessed by extracting **10 uniformly spaced frames** resized to `224x224`.
+
+
+### Evaluated metrics:
+```
+✅ Accuracy: 1.0000
+✅ AUC Score: 1.0000
+✅ Confusion Matrix:
+[[20  0]
+ [ 0 20]]
+```
+
+---
+
+## 📊 Plotting Metrics
+
+```python
+plt.plot(epochs, accuracy_list, label='Accuracy')
+plt.plot(epochs, auc_list, label='AUC Score')
+plt.xlabel('Epoch')
+plt.ylabel('Score')
+plt.title('Model Performance')
+plt.legend()
+plt.grid(True)
+plt.show()
+```
+
+---
+
+## 📉 Confusion Matrix
+
+```python
+from sklearn.metrics import ConfusionMatrixDisplay
+
+cm = confusion_matrix(y_true, y_pred_bin)
+ConfusionMatrixDisplay(cm).plot(cmap="Blues")
+```
+
+---
+
+## 🔮 Future Work
+
+- 🎙️ Add audio-visual fusion for enhanced detection
+- 🧠 Extend to classify types of manipulations
+- 📱 Deploy using ONNX or TensorRT for real-time usage
+- 🔍 Introduce model explainability (e.g., Grad-CAM)
+
+---
+
+## 📌 Author
+
+**Anugya Saxena**  
+🎓 B.Tech CSE @ DTU  
+🏅 NTSE Scholar | AI-ML Enthusiast | AIMS DTU | GDSC DTU
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🤝 Acknowledgments
+
+- AIMS-DTU 
