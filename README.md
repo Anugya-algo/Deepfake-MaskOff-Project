@@ -11,7 +11,7 @@ This project focuses on detecting deepfake videos by leveraging spatial and temp
 
 - **Spatial Features**: Extracted using `EfficientViT`, a vision transformer designed for fast and efficient image encoding.
 - **Temporal Features**: Modeled using a 1D convolutional layer to capture inter-frame inconsistencies.
-- Achieved **97.5% accuracy** and **0.9975 AUC** on the test set.
+- Achieved **100% accuracy** and **1.0000 AUC** on the test set.
 
 ---
 
@@ -65,7 +65,7 @@ Each video is preprocessed by extracting **10 uniformly spaced frames** resized 
 
 ## 📌 Author
 
-**Anugya Saxena**  
+<b>**Anugya Saxena**</b>  
 🎓 B.Tech CSE @ DTU  
 🏅 NTSE Scholar | AI-ML Enthusiast | AIMS DTU | GDSC DTU
 
