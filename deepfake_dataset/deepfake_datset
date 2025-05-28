@@ -1,8 +1,7 @@
 link to dataset :https://drive.google.com/file/d/1DKOkBIAy7HyP91N34mj1E0FFu7sqdKR_/view
 
-## 📂 Dataset Structure
+ 📂 Dataset Structure
 
-```
 deepfake_dataset/
 ├── train/
 │   ├── real/
@@ -10,4 +9,4 @@ deepfake_dataset/
 └── test/
     ├── real/
     └── fake/
-```
+
