@@ -48,33 +48,6 @@ Each video is preprocessed by extracting **10 uniformly spaced frames** resized 
 ✅ Confusion Matrix:
 [[20  0]
  [ 0 20]]
-```
-
----
-
-## 📊 Plotting Metrics
-
-```python
-plt.plot(epochs, accuracy_list, label='Accuracy')
-plt.plot(epochs, auc_list, label='AUC Score')
-plt.xlabel('Epoch')
-plt.ylabel('Score')
-plt.title('Model Performance')
-plt.legend()
-plt.grid(True)
-plt.show()
-```
-
----
-
-## 📉 Confusion Matrix
-
-```python
-from sklearn.metrics import ConfusionMatrixDisplay
-
-cm = confusion_matrix(y_true, y_pred_bin)
-ConfusionMatrixDisplay(cm).plot(cmap="Blues")
-```
 
 ---
 
