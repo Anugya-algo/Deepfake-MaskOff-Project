@@ -48,6 +48,9 @@ Each video is preprocessed by extracting **10 uniformly spaced frames** resized 
 ✅ Confusion Matrix:
 [[20  0]
  [ 0 20]]
+```
+
+---
 
 ---
 
