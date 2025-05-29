@@ -1,7 +1,7 @@
 
 # 🎭 Deepfake Detection using EfficientViT and Temporal Modeling
 
-A lightweight and highly accurate deepfake video detection system using **EfficientViT** for frame-level embeddings and **Temporal Convolutional Networks (TCN)** for sequence modeling.
+A lightweight and highly accurate deepfake video detection system using **EfficientViT** for frame-level embeddings and **Temporal Convolutional Networks (TCN)** for sequence modeling. GPU : T4 GPU
 
 ---
 
